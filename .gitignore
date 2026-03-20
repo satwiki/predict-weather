@@ -1,3 +1,9 @@
+# Data and model artifacts
+*.csv
+models/
+*.keras
+*.pkl
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
