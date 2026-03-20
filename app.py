@@ -68,7 +68,7 @@ st.sidebar.header("Select Location")
 
 input_method = st.sidebar.radio(
     "How would you like to specify a location?",
-    ["Search by City Name", "Enter Coordinates", "Paste Google Maps URL", "Pick on Map"],
+    ["Pick on Map", "Search by City Name", "Enter Coordinates", "Paste Google Maps URL"],
 )
 
 lat, lon = None, None
@@ -126,7 +126,8 @@ elif input_method == "Pick on Map":
         from streamlit_folium import st_folium
 
         m = folium.Map(location=[20, 0], zoom_start=2)
-        map_data = st_folium(m, height=400, width=500, key="location_picker")
+        map_data = st_folium(m, height=600, use_container_width=True, key="location_picker")
+        st.sidebar.caption("After selecting a point and generating forecast, scroll down to view results.")
         if map_data and map_data.get("last_clicked"):
             lat = map_data["last_clicked"]["lat"]
             lon = map_data["last_clicked"]["lng"]
