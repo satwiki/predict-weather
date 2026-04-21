@@ -36,6 +36,8 @@ Your goal is to prevent data corruption, model degradation, and runtime failures
 - Flag silent errors: bare except blocks, swallowed exceptions, missing logging
 - Check that Streamlit caching (`@st.cache_resource`, `@st.cache_data`) is used correctly and does not serve stale model artifacts
 - Verify pickle/keras model loading is safe and versioned
+- Verify test coverage
+- Verify container best practices and completeness
 
 4. Performance
 - Detect unnecessary full-DataFrame copies in preprocessing/feature engineering chains
