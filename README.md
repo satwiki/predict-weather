@@ -1,4 +1,4 @@
-# Predice-Weather app
+# Predict-Weather app
 
 A web app that predicts weather and air quality for the coming 30 days at available locations worldwide. Powered by a TensorFlow neural network trained on 23 months of global weather observations from 205 cities worldwide. User can navigate the app by selecting a location on the map, entering co-ords or google map url, or searching by city name. If selected location is not available in the model's training dataset, the app will show the user nearest available location's weather prediction.
 
